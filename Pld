@@ -76,13 +76,13 @@ function get_sets()
     right_ring="Defending Ring",
     back="Solemnity Cape",
 }
-	sets.engaged.MDT = {
+    sets.engaged.MDT = {
     sub="Aegis",
     ammo="Staunch Tathlum",
-    head="Sulevia's Mask +1",
-    body="Sulevia's Plate. +1",
+    head="Sulevia's Mask +2",
+    body="Sulevia's Plate. +2",
     hands="Sulev. Gauntlets +1",
-    legs="Flamma Dirs +1",
+    legs="Sulevia's cuisses +2",
     feet="Sulev. Leggings +1",
     neck="Asperity Necklace",
     waist="Ninurta's Sash",
