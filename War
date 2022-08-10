@@ -466,21 +466,21 @@ function init_gear_sets()
     -- Engaged Sets -----------------------------------------------------------
     ---------------------------------------------------------------------------
     sets.engaged = {
+    main="Ukonvasara",
     sub="Duplus Grip",
-    ammo="Yetshila +1",
+    ammo="Ginsen",
     head="Flam. Zucchetto +2",
-    body={ name="Valorous Mail", augments={'Accuracy+24 Attack+24','Magic dmg. taken -1%',}},
+    body={ name="Valorous Mail", augments={'"Dbl.Atk."+4','AGI+1','Accuracy+1','Attack+14',}},
     hands="Sulev. Gauntlets +2",
-    legs="Tatena. Haidate +1",
-    feet={ name="Valorous Greaves", augments={'Accuracy+17','Crit. hit damage +2%',}},
+    legs="Pumm. Cuisses +1",
+    feet="Pumm. Calligae +1",
     neck="Lissome Necklace",
     waist="Ioskeha Belt +1",
-    left_ear="Mache Earring +1",
-    right_ear="Mache Earring +1",
-    left_ring="Flamma Ring",
+    left_ear="Cessance Earring",
+    right_ear="Brutal Earring",
+    left_ring="Chirich Ring +1",
     right_ring="Niqmaddu Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
-}
     }
 
     sets.engaged.GA = {
@@ -765,19 +765,21 @@ function init_gear_sets()
 	}
     
 	sets.idle.Town = {
-        ammo="Ginsen",
-        head="Agoge Mask +3",
-        body="Councilor's Garb",
-        hands="Pummeler's Mufflers +3",
-        legs="Agoge Cuisses +3",
-        feet="Hermes' Sandals",
-        neck="War. Beads +2",
-        waist="Ioskeha Belt",
-        left_ear="Steelflash Earring",
-        right_ear="Bladeborn Earring",
-        left_ring="Chirich Ring +1",
-        right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+     main="Ukonvasara",
+    sub="Duplus Grip",
+    ammo="Ginsen",
+    head="Flam. Zucchetto +2",
+    body={ name="Valorous Mail", augments={'"Dbl.Atk."+4','AGI+1','Accuracy+1','Attack+14',}},
+    hands="Sulev. Gauntlets +2",
+    legs="Pumm. Cuisses +1",
+    feet="Pumm. Calligae +1",
+    neck="Lissome Necklace",
+    waist="Ioskeha Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Brutal Earring",
+    left_ring="Chirich Ring +1",
+    right_ring="Niqmaddu Ring",
+    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
     
 	sets.idle.Field = {
@@ -951,8 +953,8 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     if player.sub_job == 'SAM' then
-        set_macro_page(9, 18)
-        windower.add_to_chat(16, 'Changing macros to Book: ' .. 2 .. ' and Page: ' .. 10 .. '.  Job Changed to WAR/' .. player.sub_job)
+        set_macro_page(1, 14)
+        windower.add_to_chat(16, 'Changing macros to Book: ' .. 1 .. ' and Page: ' .. 14 .. '.  Job Changed to WAR/' .. player.sub_job)
     else
         set_macro_page(9, 18)
         windower.add_to_chat(16, 'Changing macros to Book: ' .. 2 .. ' and Page: ' .. 10 .. '.  Job Changed to WAR/' .. player.sub_job)
@@ -960,5 +962,5 @@ function select_default_macro_book()
 end
 
 function set_lockstyle()
-    send_command('wait 2; input /lockstyleset 9')
+    send_command('wait 2; input /lockstyleset 16')
 end
