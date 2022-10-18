@@ -131,11 +131,11 @@ function user_setup()
 		gear.RaoPetDT.Feet 				= {name="Rao Sune-Ate +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
 
 		gear.RaoMaster = {}
-		gear.RaoMaster.Head 			= {name="Rao Kabuto", augments={'STR+10','DEX+10','Attack+15',}}
-		gear.RaoMaster.Body 			= {name="Rao Togi", augments={'STR+10','DEX+10','Attack+15',}}
-		gear.RaoMaster.Hands 			= {name="Rao Kote", augments={'STR+10','DEX+10','Attack+15',}}
-		gear.RaoMaster.Legs 			= {name="Rao Haidate", augments={'STR+10','DEX+10','Attack+15',}}
-		gear.RaoMaster.Feet 			= {name="Rao Sune-Ate", augments={'STR+10','DEX+10','Attack+15',}}
+		gear.RaoMaster.Head 			= {name="Rao Kabuto +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
+		gear.RaoMaster.Body 			= {name="Rao Togi", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
+		gear.RaoMaster.Hands 			= {name="Rao Kote", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
+		gear.RaoMaster.Legs 			= {name="Rao Haidate +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
+		gear.RaoMaster.Feet 			= {name="Rao Sune-Ate +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
 				
 		-- Rawhide --
 		gear.Rawhide = {}
