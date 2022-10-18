@@ -147,7 +147,7 @@ function user_setup()
 		gear.Ryuo = {}
 		gear.Ryuo.Head 					= {name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}}
 		gear.Ryuo.Body 					= {name="Ryuo Domaru", augments={'STR+10','DEX+10','Accuracy+15',}}
-		gear.Ryuo.Hands 				= {name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}}
+		gear.Ryuo.Hands 				= {name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}}
 		gear.Ryuo.Legs 					= {name="Ryuo Hakama", augments={'Accuracy+20','"Store TP"+4','Phys. dmg. taken -3',}}
 		gear.Ryuo.Feet 					= {name="Ryuo Sune-Ate +1", augments={'STR+12','DEX+12','Accuracy+20',}}
 		
@@ -449,8 +449,8 @@ function init_gear_sets()
 	-- Victory Smite - STR
     sets.precast.WS['Victory Smite'] = 									{ammo="Knobkierrie",
 																		head="Blistering sallet +1",
-																		body=gear.Herc.Body,
-																		hands=gear.RaoMaster.Hands,
+																		body="Heyoka Harness",
+																		hands=gear.Ryuo.Hands,
 																		legs=gear.Hiza.Legs,
 																		feet=gear.Ryuo.Feet,
 																		neck="Fotia Gorget",
@@ -621,27 +621,27 @@ function init_gear_sets()
 																		right_ear="Enmerker Earring",
 																		body=gear.PUPAF.Body,
 																		--hands="Regimen Mittens",
-																		ring1="+",
+																		ring1="Thurandaut Ring",
 																		ring2="Varar Ring +1",
 																		back=gear.Visucius.PetHaste,
 																		waist="Klouskap Sash",
 																		legs=gear.PUPEmpy.Legs,
 																		feet="Punchinellos",}--Handler's Earring/Burana Earring
  
-    sets.idle.Pet.PetDT = 												{range="Animator P",
-																		ammo ="Automat. Oil +3",
-																		head=gear.RaoPetDT.Feet,
-																		body=gear.RaoPetDT.Feet,
-																		hands=gear.RaoPetDT.Hands,
-																		legs=gear.Tali.Legs,
-																		feet=gear.RaoPetDT.Feet,
-																		neck="Empath Necklace",
-																		waist="Isa Belt",
-																		left_ear="Handler's Earring +1",
-																		right_ear="Enmerker Earring",
+    sets.idle.Pet.PetDT = 												{range="Animator P +1",
+																		ammo="Automat. Oil +3",
+																		head={ name="Taeon Chapeau", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+4','Pet: Damage taken -4%',}},
+																		body={ name="Taeon Tabard", augments={'Pet: Accuracy+25 Pet: Rng. Acc.+25','Pet: Crit.hit rate +4','Pet: Damage taken -4%',}},
+																		hands={ name="Taeon Gloves", augments={'Accuracy+20 Attack+20','Pet: "Dbl. Atk."+3','Pet: Damage taken -4%',}},
+																		legs={ name="Taeon Tights", augments={'Pet: Attack+18 Pet: Rng.Atk.+18','"Repair" potency +5%','Pet: Damage taken -4%',}},
+																		feet={ name="Taeon Boots", augments={'Pet: Accuracy+19 Pet: Rng. Acc.+19','Pet: Crit.hit rate +4','Pet: Damage taken -4%',}},
+																		neck="Pup. Collar",
+																		waist="Incarnation Sash",
+																		left_ear="Domes. Earring",
+																		right_ear="Rimeice Earring",
 																		left_ring="Varar Ring +1",
-																		right_ring="Varar Ring +1",
-																		back=gear.Visucius.PetRegen,}
+																		right_ring="Thurandaut Ring",
+																		back="Penetrating Cape",}
          
     sets.idle.Pet.Engaged.Ranged = 										{range="Animator P II",
 																		ammo ="Automat. Oil +3",
